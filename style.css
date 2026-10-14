@@ -14,6 +14,7 @@ nav{
 nav h3{
     margin-top: 5px;
     letter-spacing: 5px;
+    margin-left: 5px;
 }
 .nav-links{
     display: flex;
@@ -62,6 +63,20 @@ nav h3{
     padding: 2px 6px;
     font-size: 12px;
 }
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-container{
+    display: flex;
+    position: relative;
+}
+.cart-container i{
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 5px;
+}
 /*FIRST PAGE OF HOME SECTION*/
 #home{
     margin-left: 30px;
@@ -80,7 +95,6 @@ nav h3{
 }
 .home-content p{
     line-height: 30px;
-    word-spacing: 10px;
 }
 .home-1-btn button{
     margin: 0px 20px 0px 0px;
@@ -88,10 +102,16 @@ nav h3{
     height: 40px;
     width: 250px;
 }
+.home-1-btn button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(155, 224, 45);
+}
 .home-1-btn button a{
     color: white;
     text-decoration: none;
-    word-spacing: 10px;
+}
+.home-1-btn button a:hover{
+    color: rgb(155, 224, 45);
 }
 .home-1-buttom{
     display: flex;
@@ -103,12 +123,75 @@ nav h3{
 }
 .home-content{
     display: flex;
-    gap: 150px;
+    gap: 250px;
 }
-.home-content-right img{
+.home-content-right .image-1{
     height: 400px;
     width: 400px;
-    margin-top: 90px;
+    /* margin-top: 70px;
+    margin-left: 180px; */
+    animation: move 5s infinite alternate;
+    position: relative;
+}
+.home-content-right{
+    display: flex;
+    margin-top: 80px;
+}
+@keyframes move{
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.home-content-right .image-2{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    animation: damn 5s infinite alternate;
+    z-index: -1;;
+}
+@keyframes damn{
+    0%{
+        transform: scale(0.8);  
+    }
+    100%{
+        transform: scale(1);
+        z-index: 1;
+    }
+}
+.home-content-right .image-3{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    z-index:-2;
+    animation: grand 5s infinite alternate;
+}
+@keyframes grand{
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+        z-index: 1;
+    }
+}
+.home-content-right .image-4{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    z-index:-3;
+    animation: brand 5s infinite alternate;
+}
+@keyframes brand{
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+        z-index: 1;
+    }
 }
 /*SECOND PAGE OF HOME SECTION*/
 #home-2{
@@ -125,49 +208,72 @@ nav h3{
 }
 .home-2-content{
     display: flex;
-    gap: 40px;
+    gap: 10px;
 }
 .home-2-content-price {
     font-size: 25px;
+    margin: 20px 0px 20px 10px;
 }
 .home-2-content-1 img{
     height: 230px;
     width: 270px;
-    
+    transition: 0.5s ease;
+}
+.home-2-content-1 img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    border: solid 2px rgb(155, 224, 45);
 }
 .home-2-content-1{
     background-color: white;
     margin: 60px 0px;
     width: 270px;
     line-height: 1px;
+    padding: 12px;
+}
+.home-2-content-1 p{
+    margin: 20px 0px 10px 10px;
 }
 .home-2-content-1-name{
     display: flex;
-    gap: 80px;
+    gap: 60px;
+    margin: 10px;
 }
 .home-2-content-1-name i{
     margin-top:13px;
 }
 .home-2-content-2-name{
     display: flex;
-    gap: 80px;
+    gap: 60px;
+    margin: 10px;
 }
 .home-2-content-2{
     background-color: white;
     margin: 60px 0px;
     width: 270px;
     line-height: 1px;
+    padding: 12px;
+}
+.home-2-content-2 p{
+    margin: 20px 0px 10px 10px;
 }
 .home-2-content-2 img{
     height: 230px;
     width: 270px;
+    transition: 0.5s ease;
+}
+.home-2-content-2 img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    border: solid 2px rgb(155, 224, 45);
 }
 .home-2-content-2-name i{
     margin-top:13px;
 }
 .home-2-content-3-name{
     display: flex;
-    gap: 80px;
+    gap: 60px;
+    margin: 10px;
 }
 .home-2-content-3-name i{
     margin-top:13px;
@@ -177,14 +283,25 @@ nav h3{
     margin: 60px 0px;
     width: 270px;
     line-height: 1px;
+    padding: 12px;
+}
+.home-2-content-3 p{
+    margin: 20px 0px 10px 10px;
 }
 .home-2-content-3 img{
     height: 230px;
     width: 270px;
+    transition: 0.5s ease;
+}
+.home-2-content-3 img:hover{
+    transform:scale(1.1);
+    border-radius: 10px;
+    border: solid 2px rgb(155, 224, 45);
 }
 .home-2-content-4-name{
     display: flex;
-    gap: 80px;
+    gap: 60px;
+    margin: 10px;
 }
 .home-2-content-4-name i{
     margin-top:13px;
@@ -194,10 +311,20 @@ nav h3{
     margin: 60px 0px;
     width: 270px;
     line-height: 1px;
+    padding: 12px;
+}
+.home-2-content-4 p{
+    margin: 20px 0px 10px 10px;
 }
 .home-2-content-4 img{
     height: 230px;
     width: 270px;
+    transition: 0.5s;
+}
+.home-2-content-4 img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    border: solid 2px rgb(155, 224, 45);
 }
 /*THIRD PAGE OF HOME SECTION*/
 #home-3{
@@ -213,48 +340,74 @@ nav h3{
     display: flex;
     gap: 30px;
     margin: 0px 30px 0px 0px;
+    position: relative;
+}
+.home-3-content-background:hover{
+    background: linear-gradient(rgba(61, 76, 2, 0.11));
+    position: absolute;
+    height: 400px;
+    width: 390px;
+    backdrop-filter: blur(0.9px);
+}
+.home-3-content-background{
+    transition: 0.2s ease;
 }
 .home-3-content-1{
-    background-image: url("home-3-image-1.jpeg");
+    background-image: url("media/home-3-image-1.jpeg");
     height: 400px;
     width: 500px;
     background-size: cover;
     background-position: center;
     transition: 0.5s;
     margin-bottom: 50px;
+    transition: 0.2s ease;
+}
+.home-3-content-1:hover{
+    transform: scale(1.1);
 }
 .home-3-content-1-overlay{
     margin-top: 300px;
     font-size: 20px;
     margin-left: 20px;
+    color: white;
 }
 .home-3-content-2{
-    background-image: url("home-3-image-2.jpeg");
+    background-image: url("media/home-3-image-2.jpeg");
     height: 400px;
     width: 500px;
     background-size: cover;
     background-position: center;
     transition: 0.5s;
     margin-bottom: 50px;
+    transition: 0.2s ease;
+}
+.home-3-content-2:hover{
+    transform: scale(1.1);
 }
 .home-3-content-2-overlay{
     margin-top: 300px;
     font-size: 20px;
     margin-left: 20px;
+    color: white;
 }
 .home-3-content-3{
-    background-image: url("home-3-image-3.jpeg");
+    background-image: url("media/home-3-image-3.jpeg");
     height: 400px;
     width: 500px;
     background-size: cover;
     background-position: center;
     transition: 0.5s;
     margin-bottom: 50px;
+    transition: 0.2s ease;
+}
+.home-3-content-3:hover{
+    transform: scale(1.1);
 }
 .home-3-content-3-overlay{
     margin-top: 300px;
     font-size: 20px;
     margin-left: 20px;
+    color: white;
 }
 /*FOURTH PAGE OF HOME SECTION*/
 .home-4-caption{
@@ -279,10 +432,22 @@ nav h3{
     background-color: rgb(155, 224, 45) ;
     height: 35px;
     width: 250px;
+    transition: 0.5s ease;
 } 
 .home-4-btn a{
     text-decoration: none;
     color: black;
+}
+.home-4-btn:hover{
+    transform: translateY(-2px);
+}
+.home-4-btn button:hover{
+    background: transparent;
+    color: white;
+    border: solid rgb(155, 224, 45) ;
+}
+.home-4-btn a:hover{
+    color:rgb(155, 224, 45)  ;
 }
 /*FIFTH PAGE OF HOME SECTION*/
 .home-5-heading{
@@ -342,4 +507,7 @@ footer{
     height: 35px;
     width: 100px;
     background-color: rgb(155, 224, 45) ;
+}
+@media (max-width: 576px){
+    
 }

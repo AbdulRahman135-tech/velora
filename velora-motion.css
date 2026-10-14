@@ -1,0 +1,480 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+/*NAVIGATION SECTION*/
+header{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+}
+nav h3{
+    letter-spacing: 5px;
+    margin-left: 5px;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+ .nav-links a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease-out;
+    font-size: 20px;
+}
+ .nav-links a:hover{
+    color: rgb(155, 224, 45);
+}
+.nav-left button{
+    height: 35px;
+    width: 130px;
+    background-color: black;
+    border: none;
+    transition: background-color 0.3s ease-out;
+}
+.nav-left button:hover{
+    background:transparent;
+    border: 2px solid rgb(155, 224, 45);
+}
+.nav-left a{
+    text-decoration: none;
+    color: white; 
+}
+.nav-left a:hover{
+    color: rgb(155, 224, 45);
+}
+.nav-left i{
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px; 
+}
+.circle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: limegreen;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.cart-container{
+    display: flex;
+    position: relative;
+}
+.cart-container i{
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 5px;
+}
+/*VELORA MOTION*/
+body{
+    
+    background-color: rgba(225, 223, 208, 0.452);
+}
+.velora-motion-headers{
+    display: flex;
+    justify-content: space-between;
+}
+.velora-motion-headers p{
+    background-color: white;
+    border-radius: 20px;
+    padding: 0px 7px;
+}
+#velora-motion{
+    margin-top: 60px;
+    padding: 0px 30px;
+}
+.velora-motion-left{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.velora-motion-left img{
+    width: 620px;
+    height: 480px;
+}
+.velora-motion-images{
+    display: flex;
+    margin: 20px 0px;
+    gap: 12px;
+}
+.velora-motion-images img{
+    width: 145px;
+    height: 140px;
+    border-radius: 2px;
+}
+.velora-left-caption{
+    display: flex;
+    background-color: rgba(235, 226, 215, 0.279);
+    padding: 10px 7px;
+    gap: 60px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.velora-motion-content{
+    display: flex;
+    margin: 0px 0px 50px 0px;
+}
+.velora-motion-right{
+    background-color: white;
+    margin: 40px 0px 0px 10px;
+    padding:40px 20px 20px 20px;
+    height: 750px;
+}
+.velora-motion-right-head p{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.velora-motion-right-head h3{
+    margin: 10px 0px 5px 0px;
+    font-size: 30px;
+}
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+.star i{
+    font-size: 10px;
+}
+.ratings{
+    display: flex;
+    gap: 10px;
+}
+.ratings p{
+    margin-top: 2.5px;
+}
+.reviews a{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgba(50, 75, 61, 0.922);
+}
+.velora-motion-amount{
+    background-color: rgba(225, 223, 208, 0.452);
+    margin: 20px 0px;
+    padding: 15px;
+}
+.price{
+    font-size: 40px;
+    font-weight: 600;
+}
+.velora-motion-amount p{
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 20px
+}
+.velora-motion-text{
+    text-align: left;
+    padding-right: 50px;
+    line-height: 23px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+.color{
+    display: flex;
+    gap: 20px;
+}
+.black{
+    border-radius: 50%;
+    border:3px solid black;
+    width: 42px;
+    height: 40px;
+}
+.black-inside{
+    background-color: black;
+    border-radius: 50%;
+    width:32px;
+    height: 30px;
+    margin: 2px;
+}
+.green{
+    border-radius: 50%;
+    border:3px solid green;
+    width: 42px;
+    height: 40px;
+}
+.green-inside{
+    background-color: green;
+    border-radius: 50%;
+    width:32px;
+    height: 30px;
+    margin: 2px;
+}
+.white{
+    border-radius: 50%;
+    border:3px solid wheat;
+    width: 42px;
+    height: 40px;
+}
+.white-inside{
+    background-color: wheat;
+    border-radius: 50%;
+    width:32px;
+    height: 30px;
+    margin: 2px;
+}
+.class-head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.class-head a{
+    text-decoration: none;
+    color: rgba(50, 75, 61, 0.922);
+    font-size: 13px;
+}
+.sizes{
+    display: flex;
+    gap: 20px;
+}
+.size{
+    background-color: beige;
+    padding: 10px;
+    border-radius: 5px;
+}
+.cart{
+    display: flex;
+    gap: 15px;
+}
+.digit{
+    background-color: rgb(235, 235, 152);
+    word-spacing: 20px;
+    font-size: 35px;
+    width: 150px;
+    margin: 20px 0px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.cart button{
+   width: 350px;
+    margin: 20px 0px;
+    text-align: center;
+    border-radius: 5px; 
+    background-color: greenyellow;
+    border: 2px solid yellowgreen;
+}
+.buy{
+    width: 520px;
+    height: 40px;
+    background-color: greenyellow;
+    border: 2px solid yellowgreen;
+}
+.velora-motion-right-buttom{
+    margin-top: 20px;
+}
+.list{
+    display: flex;
+    gap: 50px;
+    margin-top: 5px;
+}
+.velora-motion-last{
+    display: flex;
+    gap: 20px;
+}
+.velora-motion-last .accelerated-rebound{
+    background-color: white;
+    padding: 30px;
+    width: 650px;
+}
+.velora-motion-last .aeration-grid{
+    background-color: white;
+    padding: 30px;
+    width: 650px;
+}
+.velora-motion-last .sustainably-cast{
+    background-color: white;
+    padding: 30px;
+    width: 650px;
+}
+.velora-motion-last p{
+    margin-top: 7px;
+}
+/*YOU MAY ALSO LIKE*/
+#also-like{
+    margin: 30px 0px;
+    padding: 0px 30px;
+}
+.also-like-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 0px 30px 0px;
+}
+.also-like-head h2{
+    font-size: 35px;
+}
+.also-like-head{
+    line-height: 30px;
+}
+.also-like-header a{
+    margin-top: 35px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.also-like-content{
+    display: flex;
+    gap: 20px;
+}
+.also-like-content-1 img{
+    width: 365px;
+    height: 300px;
+}
+.also-like-content-2 img{
+    width: 365px;
+    height: 300px;
+}
+.also-like-content-3 img{
+    width: 365px;
+    height: 300px;
+}
+.also-like-content-1{
+    background-color: white;
+}
+.content-all{
+    line-height: 25px;
+    margin: 10px 15px 10px 15px;
+}
+.also-like-content-1-text{
+    display: flex;
+    justify-content: space-between;
+}
+.content-all button{
+    width: 335px;
+    height: 35px;
+    background-color: beige;
+    border: none;
+    margin-top: 15px;
+}
+.also-like-content-1-text p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sil{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.also-like-content-2{
+    background-color: white;
+}
+.also-like-content-2-text{
+    display: flex;
+    justify-content: space-between;
+}
+.also-like-content-2-text p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.also-like-content-3{
+    background-color: white;
+}
+.also-like-content-3-text{
+    display: flex;
+    justify-content: space-between;
+}
+.also-like-content-3-text p{
+    font-size: 20px;
+    font-weight: 600;
+}
+/*CORE VALUE SECTION*/
+#core-value{
+    padding: 0px 30px;
+}
+.core-value-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.blueprint{
+    text-align: left;
+    font-size: 12px;
+    margin: 20px;
+}
+.core-value-head h2{
+    font-size: 35px;
+}
+.core-value-head p{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.core-value-content{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.design{
+    background-color: white;
+    padding: 20px;
+    width: 700px;
+}
+.design-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.design-head p{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.word-container{
+    margin-right: 40px;
+    margin-bottom: 25px;
+}
+.word-container h3{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.word-container p{
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+.comfort{
+    background-color: white;
+    padding: 20px;
+    width: 700px;
+}
+.confidence{
+    background-color: white;
+    padding: 20px;
+    width: 700px;
+}
+/*FOOTER SECTION*/
+footer{
+    background-color: rgba(184, 184, 179, 0.269);
+    padding: 50px 0px 30px 30px;
+}
+.footer-1{
+    width: 400px;
+}
+.copyright{
+    justify-content: start;
+     
+}
+.footer-content{
+    display: flex;
+    padding-bottom: 50px;
+    gap: 50px;
+}
+.suscribe input{
+    height: 30px;
+    width: 300px;
+}
+.suscribe button{
+    height: 35px;
+    width: 100px;
+    background-color: rgb(155, 224, 45) ;
+}

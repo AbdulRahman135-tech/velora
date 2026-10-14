@@ -52,7 +52,41 @@ nav h3{
     margin-left: 15px;
     margin-right: 15px;
 }
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: limegreen;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+.cart-container{
+    display: flex;
+    position: relative;
+}
+.cart-container i{
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 5px;
+}
 /*SHOP SECTION*/
+a{
+    text-decoration: none;
+    color: black;
+}
+img:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease;
+    border-radius: 2px;
+    border: solid 1.5px  rgb(155, 224, 45);
+}
 #shop{
     padding: 30px;
 }
@@ -71,7 +105,7 @@ nav h3{
 }
 .shop-header{
     display: flex;
-    gap: 500px;
+    gap: 480px;
 }
 .shop-right-heading{
     display: flex;
@@ -219,15 +253,15 @@ nav h3{
 }
 .shop-content-1{
     background-color: rgba(225, 223, 208, 0.452);
-    padding: 20px;
+    padding: 15px;
 }
 .shop-content-2{
     background-color: rgba(225, 223, 208, 0.452);
-    padding: 20px;
+    padding: 15px;
 }
 .shop-content-3{
     background-color: rgba(225, 223, 208, 0.452);
-    padding: 20px;
+    padding: 15px;
 }
 .shop-content-3 img{
     height: 230px;
@@ -235,7 +269,7 @@ nav h3{
 }
 .shop-content-4{
     background-color: rgba(225, 223, 208, 0.452);
-    padding: 20px;
+    padding: 15px;
 }
 .shop-content-4 img{
     height: 230px;
@@ -243,7 +277,7 @@ nav h3{
 }
 .shop-content-5{
     background-color: rgba(225, 223, 208, 0.452);
-    padding: 20px;
+    padding: 15px;
 }
 .shop-content-5 img{
     height: 230px;
@@ -251,7 +285,7 @@ nav h3{
 }
 .shop-content-6{
     background-color: rgba(225, 223, 208, 0.452);
-    padding: 20px;
+    padding: 15px;
 }
 .shop-content-6 img{
     height: 230px;
@@ -259,7 +293,7 @@ nav h3{
 }
 .shop-content-7{
     background-color: rgba(225, 223, 208, 0.452);
-    padding: 20px;
+    padding: 15px;
 }
 .shop-content-7 img{
     height: 230px;
@@ -267,7 +301,7 @@ nav h3{
 }
 .shop-content-8{
     background-color: rgba(225, 223, 208, 0.452);
-    padding: 20px;
+    padding: 15px;
 }
 .shop-content-8 img{
     height: 230px;
