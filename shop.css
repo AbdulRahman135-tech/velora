@@ -40,7 +40,7 @@ nav h3{
     border: 2px solid greenyellow;
     border-radius: 4px;
     color: greenyellow;
-    padding: 3px;
+    padding: 5px;
 }
 .nav-left button:hover{
     background:transparent;
@@ -401,18 +401,18 @@ footer{
     height: 100%;
     width: 70%;
     background-color: black;
-    border: none;
+    border: 1.5px solid greenyellow;
     font-size: 5px;
     align-items: center;
     transition: background-color 0.3s ease-out;
-    color: white;
+    color: greenyellow;
     /* margin-bottom: 8px; */
-    padding: 1px;
-    border-radius: 1px;
+    padding: 2px;
+    border-radius: 2px;
     }
     .nav-left button:hover{
         border-radius: 1px;
-        border: 0.5px solid yellowgreen;
+        border: 1px solid yellowgreen;
         color: greenyellow;
     }
     .nav-left i{
@@ -443,7 +443,7 @@ footer{
     padding: 25px 10px;
     }
     .shop-heading h2{
-        font-size: 25px;
+        font-size: 20px;
     }
     .first{
         font-size: 6px;
